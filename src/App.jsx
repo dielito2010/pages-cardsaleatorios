@@ -1,33 +1,37 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import { Cards } from "./components/Cards/Cards";
+import { CardCriar } from "./components/CardCriar/CardCriar";
+import { Categorias } from "./components/Categorias/Categorias";
+import { Footer } from "./components/Footer/Footer";
+import { CardPorId } from "./components/CardPorId/CardPorId";
+import { CardEditar } from "./components/CardEditar/CardEditar";
+//usando export no inicio da função tem que colocar entre chaves
+//usando export no final do arquivo não pode colocar entre chaves
+import Header from "./components/Header/Header";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <header>
+        <Header />
+      </header>
+
+      <main>
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Cards />} />
+            <Route path="/categorias" element={<Categorias />} />
+            <Route path="/novoCard" element={<CardCriar />} />
+            <Route path="/cardEditarRemover/:id" element={<CardPorId />} />
+            <Route path="/cardEditar/:id" element={<CardEditar />} />
+          </Routes>
+        </div>
+      </main>
+
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

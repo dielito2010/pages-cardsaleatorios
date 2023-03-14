@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+nav {
+    background: #0042BE;
+}
+
+.conteudoNav{
+    padding: 1rem 0 1rem 1rem;
+    min-width: 400px;
+    max-width: 1200px;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5rem;
+    text-shadow: 3px 5px black;
+    margin: auto;
+    padding: 1rem 0rem;
+}
+ .logo:hover{
+    transform: scale(1.01);
+ }
+
+.logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo a:hover {
+    text-decoration: none;
+}
+
+.botoes {
+    margin: auto;
+    padding: 1rem 0rem;
+}
+
+#bntNovoCard,
+#bntCategorias{
+    margin-left: 1rem;
+    color: white;
+    font-size: 1rem;
+    border: 2px solid white;
+    background-color: #0042BE;
+    padding: 1rem;
+    border-radius: 2rem;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+#bntNovoCard:hover{
+    transform: scale(1.05);
+}
+#bntCategorias:hover{
+    transform: scale(1.05);
+}
