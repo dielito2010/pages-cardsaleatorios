@@ -10,7 +10,7 @@ export function CardPorId() {
   const { id } = useParams();
   const navegar = useNavigate();
   function bntVoltar() {
-    navegar("/");
+    navegar("/pages-cardsaleatorios");
   }
 
   const [card, setCard] = useState();

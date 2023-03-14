@@ -31,7 +31,7 @@ export function CardCriar() {
             " Se deseja ver os Cards click em 'OK' agora se quiser criar outro card click em 'CANCELAR'"
         ) === true
       ) {
-        navegar("/");
+        navegar("/pages-cardsaleatorios");
       } else {
         navegar("/novoCard");
         dadosDoForm.tituloCard.value = ""

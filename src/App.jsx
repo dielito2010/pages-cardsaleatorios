@@ -20,7 +20,7 @@ function App() {
       <main>
         <div className="content">
           <Routes>
-            <Route path="/" element={<Cards />} />
+            <Route path="/pages-cardsaleatorios" element={<Cards />} />
             <Route path="/categorias" element={<Categorias />} />
             <Route path="/novoCard" element={<CardCriar />} />
             <Route path="/cardEditarRemover/:id" element={<CardPorId />} />

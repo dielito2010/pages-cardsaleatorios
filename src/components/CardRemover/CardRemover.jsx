@@ -24,7 +24,7 @@ export function CardRemover(props) {
     const body = await response.json();
     if (response.status === 200) {
       alert(body.message);
-      navegar("/");
+      navegar("/pages-cardsaleatorios");
     } else {
       alert(body.message);
     }
