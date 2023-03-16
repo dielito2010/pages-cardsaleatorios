@@ -17,7 +17,7 @@ function Header() {
     <nav>
       <div className="conteudoNav">
         <div className="logo">
-          <a href="/" title="CardsAleatóriosHome">
+          <a href="/pages-cardsaleatorios" title="CardsAleatóriosHome">
             <h1>Cards Aleatórios</h1>
           </a>
         </div>
